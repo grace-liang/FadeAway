@@ -35,6 +35,7 @@ public class Wall : MonoBehaviour {
 	}
 
 	void death() {
+		//TODO - change to Get scene 0.
 		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 	}
 		
