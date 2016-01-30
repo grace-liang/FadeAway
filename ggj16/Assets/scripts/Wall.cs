@@ -4,20 +4,20 @@ using UnityEngine.SceneManagement;
 
 public class Wall : MonoBehaviour {
 
-	private bool wallsHidden;
-	private float time_since_start;
+	// private bool wallsHidden;
+	// private float time_since_start;
 	private player_movement player;
 	private double power_usage = 3;
 
 	// For colour fade.
-	private float fadeDuration = 6;
+	private float fadeDuration = 5;
 	private float timer = 0;
 
     // Use this for initialization
     void Start () {
 		player = FindObjectOfType (typeof(player_movement)) as player_movement;
-		time_since_start = 0;
-		wallsHidden = false;
+		// time_since_start = 0;
+		// wallsHidden = false;
 	}
 	
 	// Update is called once per frame
@@ -46,5 +46,10 @@ public class Wall : MonoBehaviour {
 		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 	}
 		
-
+	public void AddDuration () {
+		if (fadeDuration < 3) {
+			fadeDuration = 3;
+			timer = 0;
+		}
+	}
 }
