@@ -4,7 +4,6 @@ using UnityEngine.SceneManagement;
 
 public class Wall : MonoBehaviour {
 
-    public Renderer rend;
 	private bool wallsHidden;
 	private float time_since_start;
 	private player_movement player;
@@ -15,7 +14,6 @@ public class Wall : MonoBehaviour {
 		player = FindObjectOfType (typeof(player_movement)) as player_movement;
 		time_since_start = 0;
 		wallsHidden = false;
-		rend = GetComponent<Renderer> ();
 	}
 	
 	// Update is called once per frame
