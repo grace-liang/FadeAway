@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class goal : MonoBehaviour {
 
@@ -14,5 +15,9 @@ public class goal : MonoBehaviour {
 	//	death ();
 		player.add_power(25);
 		Debug.Log ("Power level: "+player.get_power ());
+	}
+
+	void OnTriggerEnter2D (Collider2D other) {
+		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);
 	}
 }
