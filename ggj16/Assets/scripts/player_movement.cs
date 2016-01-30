@@ -4,22 +4,38 @@ using System.Collections;
 public class player_movement : MonoBehaviour {
 
 	private int speed = 5;
-	public int powerlevel = 100;
+	public double powerlevel = 100;
 	// Use this for initialization
 	void Start () {
-	
+
 	}
 
-	public int get_power()
+	public double get_power()
 	{
 		return powerlevel;
 	}
 
-	void set_power(int number)
+	public void minus_power(double number)
 	{
-		powerlevel = number;
+		double newPow;
+		newPow = powerlevel -= number;
+		if (newPow < 0)
+			powerlevel = 0;
+		else
+			powerlevel = newPow; 
+			
 	}
 
+	public void add_power(double number)
+	{
+		double newPow;
+		newPow = powerlevel += number;
+		if (newPow > 100) {
+			powerlevel = 100;
+		} else {
+			powerlevel = newPow;
+		}
+	}
 	
 	// Update is called once per frame
 	void Update () {
