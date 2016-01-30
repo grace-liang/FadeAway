@@ -9,7 +9,7 @@ public class Wall : MonoBehaviour {
     // Use this for initialization
     void Start () {
 		wallsHidden = false;
-        rend = GetComponent<Renderer>();
+		rend = GetComponent<Renderer> ();
 	}
 	
 	// Update is called once per frame
