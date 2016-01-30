@@ -8,6 +8,7 @@ public class Wall : MonoBehaviour {
 	private bool wallsHidden;
 	private float time_since_start;
 	private player_movement player;
+	private double power_usage = 3;
 
     // Use this for initialization
     void Start () {
@@ -26,7 +27,8 @@ public class Wall : MonoBehaviour {
 		if (Input.GetKey(KeyCode.Space) && player.get_power() > 0)
 		{
 			this.GetComponent<SpriteRenderer>().color = Color.red;
-			player.get_power ();
+			player.minus_power (power_usage);
+			Debug.Log ("Power level: "+player.get_power ());
 		}
     }
 

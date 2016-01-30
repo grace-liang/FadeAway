@@ -3,13 +3,16 @@ using System.Collections;
 
 public class goal : MonoBehaviour {
 
+	private player_movement player;
+
 	// Use this for initialization
 	void Start () {
-	
+		player = FindObjectOfType (typeof(player_movement)) as player_movement;
 	}
 	
-	// Update is called once per frame
-	void Update () {
-	
+	void OnTriggerEnter2D (Collider2D other) {
+	//	death ();
+		player.add_power(25);
+		Debug.Log ("Power level: "+player.get_power ());
 	}
 }
