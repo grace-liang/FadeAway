@@ -25,7 +25,11 @@ public class Wall : MonoBehaviour {
     }
 
 	void OnTriggerEnter2D (Collider2D other) {
-		Debug.Log ("COLLISION");
+		death ();
+	}
+
+	void death() {
+		Application.LoadLevel("level1");
 	}
 		
 
