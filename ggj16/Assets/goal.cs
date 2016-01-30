@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class goal : MonoBehaviour {
 
@@ -11,5 +12,9 @@ public class goal : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 	
+	}
+
+	void OnTriggerEnter2D (Collider2D other) {
+		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);
 	}
 }
