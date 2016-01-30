@@ -3,13 +3,11 @@ using System.Collections;
 
 public class Wall : MonoBehaviour {
 
-    public Renderer rend;
 	private bool wallsHidden;
 
     // Use this for initialization
     void Start () {
 		wallsHidden = false;
-		rend = GetComponent<Renderer> ();
 	}
 	
 	// Update is called once per frame
