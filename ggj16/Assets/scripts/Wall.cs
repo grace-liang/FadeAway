@@ -9,6 +9,10 @@ public class Wall : MonoBehaviour {
 	private player_movement player;
 	private double power_usage = 3;
 
+	// For colour fade.
+	private float fadeDuration = 2;
+	private float timer = 0;
+
     // Use this for initialization
     void Start () {
 		player = FindObjectOfType (typeof(player_movement)) as player_movement;
@@ -18,10 +22,13 @@ public class Wall : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		time_since_start += Time.deltaTime;
-		if (!wallsHidden && time_since_start > 2) {
-			this.GetComponent<SpriteRenderer>().color = Color.white;
+
+		// Fade the walls from red to white over fadeDuration.
+		this.GetComponent<SpriteRenderer> ().color = Color.Lerp (Color.red, Color.white, timer);
+		if (timer < 1) {
+			timer += Time.deltaTime / fadeDuration;
 		}
+
 		if (Input.GetKey(KeyCode.Space) && player.get_power() > 0)
 		{
 			this.GetComponent<SpriteRenderer>().color = Color.red;
