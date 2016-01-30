@@ -13,8 +13,10 @@ public class Wall : MonoBehaviour {
 		
 	}
 
+
 	void OnTriggerEnter2D (Collider2D other) {
 		Debug.Log ("COLLISION");
 	}
+		
 
 }
