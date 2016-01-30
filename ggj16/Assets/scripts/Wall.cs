@@ -10,7 +10,7 @@ public class Wall : MonoBehaviour {
 	private double power_usage = 3;
 
 	// For colour fade.
-	private float fadeDuration = 2;
+	private float fadeDuration = 6;
 	private float timer = 0;
 
     // Use this for initialization
