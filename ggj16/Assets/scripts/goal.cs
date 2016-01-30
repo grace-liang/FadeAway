@@ -15,7 +15,8 @@ public class goal : MonoBehaviour {
 	//	death ();
 		player.add_power(25);
 		Debug.Log ("Power level: "+player.get_power ());
-		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);
+        Global.level += 1;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);
 	}
 		
 }
