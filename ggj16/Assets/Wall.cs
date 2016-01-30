@@ -3,11 +3,8 @@ using System.Collections;
 
 public class Wall : MonoBehaviour {
 
-    public Renderer rend;
-
     // Use this for initialization
     void Start () {
-        rend = GetComponent<Renderer>();
 	}
 	
 	// Update is called once per frame
