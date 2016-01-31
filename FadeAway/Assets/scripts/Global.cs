@@ -18,6 +18,9 @@ public class Global
 	protected static double power = 50;
     public static double levelPowerCache = power;
 
+    // Game State
+    public static bool inTransition = false;
+
 	public static double GetPower ()
 	{
 		return power;

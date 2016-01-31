@@ -27,7 +27,7 @@ public class Fading : MonoBehaviour {
     void OnLevelWasLoaded()
     {
         Global.levelPowerCache = Global.GetPower();
-        Wall.disableCollider = false;
+        Global.inTransition = false;
         BeginFade(-1);
     }
 }
