@@ -10,10 +10,13 @@ public class Wall : MonoBehaviour
 	protected float fadeDuration = 2;
 	private float timer = 0;
 
+    public static bool disableCollider;
+
 	void Start ()
 	{
 		player = FindObjectOfType (typeof(Player)) as Player;
-	}
+        disableCollider = false;
+    }
 
 	protected void Update ()
 	{
@@ -39,7 +42,7 @@ public class Wall : MonoBehaviour
 
 	void OnTriggerEnter2D (Collider2D other)
 	{
-		DeathByWall ();
+		if(!disableCollider) DeathByWall ();
 	}
 
 	void DeathByWall ()
