@@ -7,7 +7,7 @@ public class Wall : MonoBehaviour
 	private Player player;
 	private double powerUsageRate = 3;
 
-	private float fadeDuration = 5;
+	private float fadeDuration = 2;
 	private float timer = 0;
 
 	void Start ()
@@ -18,9 +18,11 @@ public class Wall : MonoBehaviour
 	void Update ()
 	{
 
-		// Fade the walls from red to white gradually over fadeDuration.
-		this.GetComponent<SpriteRenderer> ().color = Color.Lerp (Color.red, Color.white, timer);
-		if (timer < 1) {
+        // Fade the walls from red to white gradually over fadeDuration.
+        Color change = this.GetComponent<SpriteRenderer>().material.color;// = Color.Lerp (Color.red, Color.white, timer);
+        change.a = 1 - timer;
+        this.GetComponent<SpriteRenderer>().material.color = change;
+        if (timer < 1) {
 			timer += Time.deltaTime / fadeDuration;
 		}
 

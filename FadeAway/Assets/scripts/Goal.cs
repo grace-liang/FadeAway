@@ -13,8 +13,9 @@ public class Goal : MonoBehaviour
 		player = FindObjectOfType (typeof(Player)) as Player;
 	}
 
-	void OnTriggerEnter2D (Collider2D other)
+	IEnumerator OnTriggerEnter2D (Collider2D other)
 	{
+        player.GetComponent<Rigidbody2D>().velocity = Vector3.zero;
 
 		// Grant the player more power for beating the level.
 		player.AddPower (25);
@@ -23,6 +24,8 @@ public class Goal : MonoBehaviour
 
 		// Advance to the next level.
 		Global.level++;
+        float fadeTime = GameObject.Find("_GM").GetComponent<Fading>().BeginFade(1);
+        yield return new WaitForSeconds(fadeTime);
 		SceneManager.LoadScene (SceneManager.GetActiveScene ().buildIndex + 1);
 	}
 }
