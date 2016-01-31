@@ -3,10 +3,10 @@ using System.Collections;
 
 public class Player : MonoBehaviour
 {
-	private int speed = 5;
-	public double power = 100;
+	protected int speed = 5;
+	protected double power = 100;
 
-	void Update ()
+	protected void Update ()
 	{
 		bool up = Input.GetKey (KeyCode.UpArrow);
 		bool down = Input.GetKey (KeyCode.DownArrow);
