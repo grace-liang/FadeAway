@@ -16,26 +16,27 @@ public class Goal : MonoBehaviour
 
 	IEnumerator OnTriggerEnter2D (Collider2D other)
 	{
-        Debug.Log("TAG: " + other.tag);
+        if (other.tag == "Player") {
+            // Play sound effect
+            AudioSource source = GetComponent<AudioSource>();
+            source.PlayOneShot(clip, 0.7F);
 
-		// Play sound effect
-		AudioSource source = GetComponent<AudioSource>();
-		source.PlayOneShot(clip, 0.7F);
+            player.GetComponent<Rigidbody2D>().velocity = Vector3.zero;
 
-        player.GetComponent<Rigidbody2D>().velocity = Vector3.zero;
+            // Grant the player more power for beating the level.
+            Global.AddPower(15 + Timer.GetRemainingTime());
+            Debug.Log("Player's power level: " + Global.GetPower());
 
-		// Grant the player more power for beating the level.
-		Global.AddPower (15 + Timer.GetRemainingTime());
-		//Debug.Log ("Player's power level: " + Global.GetPower ());
-	
 
-		// Advance to the next level.
-		Global.level++;
-        Global.inTransition = true;
-        Global.levelImageSeen = false;
-        float fadeTime = GameObject.Find("_GM").GetComponent<Fading>().BeginFade(1);
-        yield return new WaitForSeconds(fadeTime);
-        SceneManager.LoadScene (SceneManager.GetActiveScene ().buildIndex + 1);
+            // Advance to the next level.
+            Global.level++;
+            Global.inTransition = true;
+            Global.levelImageSeen = false;
+
+            float fadeTime = GameObject.Find("_GM").GetComponent<Fading>().BeginFade(1);
+            yield return new WaitForSeconds(fadeTime);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
 	}
 
 
