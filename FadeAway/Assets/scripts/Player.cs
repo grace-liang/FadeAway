@@ -4,7 +4,6 @@ using System.Collections;
 public class Player : MonoBehaviour
 {
 	protected int speed = 5;
-	protected double power = 100;
 
 	protected void Update ()
 	{
@@ -26,31 +25,5 @@ public class Player : MonoBehaviour
 			transform.Translate (Vector3.right * speed * Time.deltaTime);
 		}
 	}
-
-	public double GetPower ()
-	{
-		return power;
-	}
-
-	public void AddPower (double number)
-	{
-		double newPower;
-		newPower = power += number;
-		if (newPower > 100) {
-			power = 100;
-		} else {
-			power = newPower;
-		}
-	}
-
-	public void MinusPower (double number)
-	{
-		double newPower;
-		newPower = power -= number;
-		if (newPower < 0) {
-			power = 0;
-		} else {
-			power = newPower;
-		}
-	}
+		
 }

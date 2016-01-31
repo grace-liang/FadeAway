@@ -10,16 +10,12 @@ public class Wall : MonoBehaviour
 	protected float fadeDuration = 2;
 	private float timer = 0;
 
-	void Start ()
-	{
-		player = FindObjectOfType (typeof(Player)) as Player;
-	}
 
 	protected void Update ()
 	{
 
         // Fade the walls from red to white gradually over fadeDuration.
-        Color change = this.GetComponent<SpriteRenderer>().material.color;// = Color.Lerp (Color.red, Color.white, timer);
+        Color change = this.GetComponent<SpriteRenderer>().material.color;
         change.a = 1 - timer;
         this.GetComponent<SpriteRenderer>().material.color = change;
         if (timer < 1) {
@@ -27,10 +23,13 @@ public class Wall : MonoBehaviour
 		}
 
 		// Light up the walls and reduce the player's power.
-		if (Input.GetKey (KeyCode.Space) && player.GetPower () > 0) {
-			this.GetComponent<SpriteRenderer> ().color = Color.red;
-			player.MinusPower (powerUsageRate);
-			Debug.Log ("Player's power level: " + player.GetPower ());
+		if (Input.GetKey (KeyCode.Space) && Global.GetPower() > 0) {
+			Color changeColor = this.GetComponent<SpriteRenderer> ().color;
+            changeColor.a = 1.0f;
+            this.GetComponent<SpriteRenderer>().material.color = changeColor;
+
+            Global.MinusPower (powerUsageRate);
+			Debug.Log ("Player's power level: " + Global.GetPower ());
 		}
 	}
 
