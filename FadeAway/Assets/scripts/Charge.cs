@@ -17,5 +17,7 @@ public class Charge : MonoBehaviour
 		foreach (Wall w in walls) {
 			w.AddDuration ();
 		}
+
+		Destroy (gameObject);
 	}
 }
