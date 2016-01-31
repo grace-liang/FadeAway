@@ -5,6 +5,8 @@ public class button_gate_south : MonoBehaviour {
 	float timeLeft = 0.5f;
 	bool countDownStart = false;
 	private GameObject gate;
+	public AudioClip opengate_sound;
+
 
 	void OnTriggerEnter2D (Collider2D other)
 	{
@@ -19,10 +21,15 @@ public class button_gate_south : MonoBehaviour {
 	{
 		if (timeLeft <= 0) {
 			Debug.Log ("Time has hit 0");
+			AudioSource source = GetComponent<AudioSource>();
+			source.PlayOneShot (opengate_sound, 0.7F);
+
 			gate = GameObject.Find ("Gate_South");
+			Destroy (gate.GetComponent<Wall> ());
 			Destroy (gate.GetComponent<Collider2D> ());
 			Destroy (gate.GetComponent<SpriteRenderer> ());
-			Destroy (this.gameObject);
+			Destroy (this.GetComponent<SpriteRenderer> ());
+			Destroy (this.GetComponent<button_gate_south>());
 		}
 		if (countDownStart && timeLeft > 0) {
 			timeLeft -= Time.deltaTime;
