@@ -15,15 +15,15 @@ public class Global
 	public static float[] times = new float[6] { 0.0f, 5.0f, 10.0f, 15.0f, 20.0f, 20.0f };
 
 	//Total Power of player
-	protected double power = 100;
+	protected static double power = 100;
 
 
-	public double GetPower ()
+	public static double GetPower ()
 	{
 		return power;
 	}
 
-	public void AddPower (double number)
+	public static void AddPower (double number)
 	{
 		double newPower;
 		newPower = power += number;
@@ -34,7 +34,7 @@ public class Global
 		}
 	}
 
-	public void MinusPower (double number)
+	public static void MinusPower (double number)
 	{
 		double newPower;
 		newPower = power -= number;
