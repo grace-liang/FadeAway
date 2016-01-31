@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -25,5 +26,4 @@ public class Player : MonoBehaviour
 			transform.Translate (Vector3.right * speed * Time.deltaTime);
 		}
 	}
-		
 }
