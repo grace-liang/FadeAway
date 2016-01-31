@@ -9,6 +9,7 @@ TagManager:
   - Deathzone
   - Wall
   - Fireball
+  - Player
   layers:
   - Default
   - TransparentFX
