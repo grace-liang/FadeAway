@@ -12,7 +12,7 @@ public class Global
 
 	// Available alloted for each level.
 	// First one is for the start menu.
-	public static float[] times = new float[6] { 0.0f, 5.0f, 10.0f, 15.0f, 20.0f, 20.0f };
+	public static float[] times = new float[7] { 0.0f, 5.0f, 10.0f, 15.0f, 20.0f, 20.0f, 20.0f };
 
 	//Total Power of player
 	protected static double power = 100;
