@@ -33,17 +33,7 @@ public class Wall : MonoBehaviour
 			Debug.Log ("Player's power level: " + player.GetPower ());
 		}
 	}
-
-	void OnTriggerEnter2D (Collider2D other)
-	{
-		DeathByWall ();
-	}
-
-	void DeathByWall ()
-	{
-		SceneManager.LoadScene (SceneManager.GetActiveScene ().buildIndex);
-	}
-
+		
 	public void AddDuration ()
 	{
 		timer -= 0.3f;

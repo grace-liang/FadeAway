@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -52,5 +53,15 @@ public class Player : MonoBehaviour
 		} else {
 			power = newPower;
 		}
+	}
+
+	void OnTriggerEnter2D (Collider2D other) {
+		if (other.tag == "Wall" || other.tag == "Fireball") {
+			Die ();
+		}
+	}
+
+	void Die () {
+		SceneManager.LoadScene (SceneManager.GetActiveScene ().buildIndex);
 	}
 }
