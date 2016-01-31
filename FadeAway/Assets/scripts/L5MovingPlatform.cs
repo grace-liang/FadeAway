@@ -21,7 +21,7 @@ public class L5MovingPlatform : MonoBehaviour {
 			transform.Translate (Vector3.right * 5 * Time.deltaTime);
 		}
 
-		// Fade the platforms from red to white gradually over fadeDuration.
+		// Fade the walls from red to white gradually over fadeDuration.
 		Color change = this.GetComponent<SpriteRenderer>().material.color;
 		change.a = 1 - timer;
 		this.GetComponent<SpriteRenderer>().material.color = change;
@@ -30,12 +30,12 @@ public class L5MovingPlatform : MonoBehaviour {
 		}
 
 		// Light up the walls and reduce the player's power.
-		double powerUsageRate = 3;
+		if (Input.GetKey (KeyCode.Space) && Global.GetPower() > 0) {
+			Color changeColor = this.GetComponent<SpriteRenderer> ().color;
+			changeColor.a = 1.0f;
+			this.GetComponent<SpriteRenderer>().material.color = changeColor;
 
-		if (Input.GetKey (KeyCode.Space) && Global.GetPower () > 0) {
-			GetComponent<SpriteRenderer> ().color = Color.red;
-			Global.MinusPower (powerUsageRate);
-			Debug.Log ("Player's power level: " + Global.GetPower ());
+			Global.MinusPower(Time.deltaTime);
 		}
 	}
 
