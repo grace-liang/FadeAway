@@ -44,9 +44,6 @@ public class Wall : MonoBehaviour
 
 	public void AddDuration ()
 	{
-		if (fadeDuration < 3) {
-			fadeDuration = 3;
-			timer = 0;
-		}
+		timer -= 0.3f;
 	}
 }
