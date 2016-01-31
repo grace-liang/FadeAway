@@ -6,12 +6,13 @@ using UnityEngine.SceneManagement;
 public class Timer : MonoBehaviour
 {
 	private float goalTime;
-	private float remainingTime;
+	private static float remainingTime;
 	private string timerText;
 	private double current_power;
 
 	void Start ()
 	{
+        Debug.Log("LEVEL:" + Global.level);
 		goalTime = Time.time;
 		remainingTime = Global.times [Global.level];
 		current_power = Global.GetPower ();
@@ -46,4 +47,6 @@ public class Timer : MonoBehaviour
 		timerText = string.Format ("{0:00}:{1:00}:{2:00}"+"\nPower:{3:00}", mm, ss, fraction, current_power);
 		this.GetComponent<Text> ().text = timerText;
 	}
+
+    public static float GetRemainingTime() { return remainingTime; }
 }

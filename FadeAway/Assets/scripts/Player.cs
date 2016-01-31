@@ -37,7 +37,7 @@ public class Player : MonoBehaviour
 
     void Die()
     {
-        Global.SetPower(Global.levelPowerCache);
+        Global.SetPower(Global.levelPowerCache - 10);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
