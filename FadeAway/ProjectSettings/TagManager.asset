@@ -7,6 +7,8 @@ TagManager:
   - Start
   - Platform
   - Deathzone
+  - Wall
+  - Fireball
   layers:
   - Default
   - TransparentFX

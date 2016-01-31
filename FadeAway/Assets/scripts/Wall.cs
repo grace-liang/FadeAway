@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 public class Wall : MonoBehaviour
 {
 	private double powerUsageRate = 3;
-    
+
 	protected float fadeDuration = 2;
 	private float timer = 0;
 
@@ -36,16 +36,6 @@ public class Wall : MonoBehaviour
             Global.MinusPower (powerUsageRate);
 			Debug.Log ("Player's power level: " + Global.GetPower ());
 		}
-	}
-
-	void OnTriggerEnter2D (Collider2D other)
-	{
-		if(!disableCollider) DeathByWall ();
-	}
-
-	void DeathByWall ()
-	{
-		SceneManager.LoadScene (SceneManager.GetActiveScene ().buildIndex);
 	}
 
 	public void AddDuration ()
