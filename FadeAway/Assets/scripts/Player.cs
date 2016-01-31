@@ -35,8 +35,8 @@ public class Player : MonoBehaviour
             if(!Global.inTransition) Die();
         }
     }
-
-	void Die()
+		
+    protected void Die()
     {
 		if (!God_Mode) {
 			Global.SetPower (Global.levelPowerCache);
