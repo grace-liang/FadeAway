@@ -5,6 +5,7 @@ public class Charge : MonoBehaviour
 {
 	private Wall[] walls;
 
+
 	void Start ()
 	{
 		walls = FindObjectsOfType (typeof(Wall)) as Wall[];
