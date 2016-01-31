@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
+	public bool God_Mode = true;
     protected int speed = 5;
 
 	protected void Update ()
@@ -35,10 +36,13 @@ public class Player : MonoBehaviour
         }
     }
 
-    void Die()
+	void Die()
     {
-        Global.SetPower(Global.levelPowerCache);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+		if (!God_Mode) {
+			Global.SetPower (Global.levelPowerCache);
+			SceneManager.LoadScene (SceneManager.GetActiveScene ().buildIndex);
+		}
     }
+
 }
     

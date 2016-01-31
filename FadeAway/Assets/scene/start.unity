@@ -676,6 +676,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1593046370}
   - 82: {fileID: 1593046369}
+  - 114: {fileID: 1593046371}
   m_Layer: 0
   m_Name: background - chibiNinja
   m_TagString: Untagged
@@ -694,9 +695,9 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 94aa20e20e8f7495893481b73f101e24, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.309
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   Priority: 128
@@ -769,6 +770,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
+--- !u!114 &1593046371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1593046368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc9601b7045bd42858b7494f8a256187, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clip: {fileID: 8300000, guid: 94aa20e20e8f7495893481b73f101e24, type: 3}
 --- !u!1 &2113060703
 GameObject:
   m_ObjectHideFlags: 0
