@@ -18,8 +18,8 @@ public class Goal : MonoBehaviour
         player.GetComponent<Rigidbody2D>().velocity = Vector3.zero;
 
 		// Grant the player more power for beating the level.
-		player.AddPower (25);
-		Debug.Log ("Player's power level: " + player.GetPower ());
+		Global.AddPower (25);
+		Debug.Log ("Player's power level: " + Global.GetPower ());
 	
 
 		// Advance to the next level.

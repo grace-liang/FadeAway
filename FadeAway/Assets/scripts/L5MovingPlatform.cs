@@ -31,10 +31,10 @@ public class L5MovingPlatform : MonoBehaviour {
 		L5Player player = FindObjectOfType (typeof(L5Player)) as L5Player;
 		double powerUsageRate = 3;
 
-		if (Input.GetKey (KeyCode.Space) && player.GetPower () > 0) {
+		if (Input.GetKey (KeyCode.Space) && Global.GetPower () > 0) {
 			GetComponent<SpriteRenderer> ().color = Color.red;
-			player.MinusPower (powerUsageRate);
-			Debug.Log ("Player's power level: " + player.GetPower ());
+			Global.MinusPower (powerUsageRate);
+			Debug.Log ("Player's power level: " + Global.GetPower ());
 		}
 	}
 
