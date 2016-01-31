@@ -1,0 +1,1061 @@
+fileFormatVersion: 2
+guid: ea4a2d304ff2d8a4b892670839e85656
+timeCreated: 1454210636
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: tiles__r1708350101_0
+    21300002: tiles__r1708350101_1
+    21300004: tiles__r1708350101_2
+    21300006: tiles__r1708350101_3
+    21300008: tiles__r1708350101_4
+    21300010: tiles__r1708350101_5
+    21300012: tiles__r1708350101_6
+    21300014: tiles__r1708350101_7
+    21300016: tiles__r1708350101_8
+    21300018: tiles__r1708350101_9
+    21300020: tiles__r1708350101_10
+    21300022: tiles__r1708350101_11
+    21300024: tiles__r1708350101_12
+    21300026: tiles__r1708350101_13
+    21300028: tiles__r1708350101_14
+    21300030: tiles__r1708350101_15
+    21300032: tiles__r1708350101_16
+    21300034: tiles__r1708350101_17
+    21300036: tiles__r1708350101_18
+    21300038: tiles__r1708350101_19
+    21300040: tiles__r1708350101_20
+    21300042: tiles__r1708350101_21
+    21300044: tiles__r1708350101_22
+    21300046: tiles__r1708350101_23
+    21300048: tiles__r1708350101_24
+    21300050: tiles__r1708350101_25
+    21300052: tiles__r1708350101_26
+    21300054: tiles__r1708350101_27
+    21300056: tiles__r1708350101_28
+    21300058: tiles__r1708350101_29
+    21300060: tiles__r1708350101_30
+    21300062: tiles__r1708350101_31
+    21300064: tiles__r1708350101_32
+    21300066: tiles__r1708350101_33
+    21300068: tiles__r1708350101_34
+    21300070: tiles__r1708350101_35
+    21300072: tiles__r1708350101_36
+    21300074: tiles__r1708350101_37
+    21300076: tiles__r1708350101_38
+    21300078: tiles__r1708350101_39
+    21300080: tiles__r1708350101_40
+    21300082: tiles__r1708350101_41
+    21300084: tiles__r1708350101_42
+    21300086: tiles__r1708350101_43
+    21300088: tiles__r1708350101_44
+    21300090: tiles__r1708350101_45
+    21300092: tiles__r1708350101_46
+    21300094: tiles__r1708350101_47
+    21300096: tiles__r1708350101_48
+    21300098: tiles__r1708350101_49
+    21300100: tiles__r1708350101_50
+    21300102: tiles__r1708350101_51
+    21300104: tiles__r1708350101_52
+    21300106: tiles__r1708350101_53
+    21300108: tiles__r1708350101_54
+    21300110: tiles__r1708350101_55
+    21300112: tiles__r1708350101_56
+    21300114: tiles__r1708350101_57
+    21300116: tiles__r1708350101_58
+    21300118: tiles__r1708350101_59
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: tiles__r1708350101_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 241
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: 19}
+        - {x: -19, y: -19}
+        - {x: 19, y: -19}
+        - {x: 19, y: 19}
+    - name: tiles__r1708350101_1
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 241
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: 19}
+        - {x: -19, y: -19}
+        - {x: 19, y: -19}
+        - {x: 19, y: 19}
+    - name: tiles__r1708350101_2
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 241
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: 19}
+        - {x: -19, y: -19}
+        - {x: 19, y: -19}
+        - {x: 19, y: 19}
+    - name: tiles__r1708350101_3
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 241
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: 19}
+        - {x: -19, y: -19}
+        - {x: 19, y: -19}
+        - {x: 19, y: 19}
+    - name: tiles__r1708350101_4
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 241
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: 19}
+        - {x: -19, y: -19}
+        - {x: 19, y: -19}
+        - {x: 19, y: 19}
+    - name: tiles__r1708350101_5
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 241
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: 19}
+        - {x: -19, y: -19}
+        - {x: 19, y: -19}
+        - {x: 19, y: 19}
+    - name: tiles__r1708350101_6
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 241
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: 19}
+        - {x: -19, y: -19}
+        - {x: 19, y: -19}
+        - {x: 19, y: 19}
+    - name: tiles__r1708350101_7
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 241
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: 19}
+        - {x: -19, y: -19}
+        - {x: 19, y: -19}
+        - {x: 19, y: 19}
+    - name: tiles__r1708350101_8
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 241
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: 19}
+        - {x: -19, y: -19}
+        - {x: 19, y: -19}
+        - {x: 19, y: 19}
+    - name: tiles__r1708350101_9
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 201
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: 19}
+        - {x: -19, y: -19}
+        - {x: 19, y: -19}
+        - {x: 19, y: 19}
+    - name: tiles__r1708350101_10
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 201
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: 19}
+        - {x: -19, y: -18}
+        - {x: -18, y: -19}
+        - {x: 19, y: -19}
+        - {x: 19, y: 19}
+    - name: tiles__r1708350101_11
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 201
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 19}
+        - {x: -19, y: 17}
+        - {x: -19, y: -17}
+        - {x: -17, y: -19}
+        - {x: 17, y: -19}
+        - {x: 19, y: -17}
+        - {x: 19, y: 17}
+        - {x: 17, y: 19}
+    - name: tiles__r1708350101_12
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 201
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: 19}
+        - {x: -19, y: -19}
+        - {x: 19, y: -19}
+        - {x: 19, y: 18}
+        - {x: 18, y: 19}
+    - name: tiles__r1708350101_13
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 201
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: 19}
+        - {x: -19, y: -19}
+        - {x: 19, y: -19}
+        - {x: 19, y: 19}
+    - name: tiles__r1708350101_14
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 201
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: 19}
+        - {x: -19, y: -19}
+        - {x: 19, y: -19}
+        - {x: 19, y: 19}
+    - name: tiles__r1708350101_15
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 162
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 18}
+        - {x: -18, y: 16}
+        - {x: -18, y: -17}
+        - {x: -17, y: -18}
+        - {x: 17, y: -18}
+        - {x: 18, y: -17}
+        - {x: 18, y: 18}
+    - name: tiles__r1708350101_16
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 162
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: 18}
+        - {x: -18, y: 16}
+        - {x: -18, y: -17}
+        - {x: -17, y: -18}
+        - {x: 18, y: -18}
+        - {x: 18, y: 18}
+    - name: tiles__r1708350101_17
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 162
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13, y: 18}
+        - {x: -18, y: 12}
+        - {x: -18, y: -17}
+        - {x: -17, y: -18}
+        - {x: 18, y: -18}
+        - {x: 18, y: 18}
+    - name: tiles__r1708350101_18
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 162
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 18}
+        - {x: -18, y: -16}
+        - {x: -16, y: -18}
+        - {x: 16, y: -18}
+        - {x: 18, y: -16}
+        - {x: 18, y: 18}
+    - name: tiles__r1708350101_19
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 162
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 18}
+        - {x: -18, y: -17}
+        - {x: -17, y: -18}
+        - {x: 18, y: -18}
+        - {x: 18, y: 18}
+    - name: tiles__r1708350101_20
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 162
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 18}
+        - {x: -18, y: -18}
+        - {x: 18, y: -18}
+        - {x: 18, y: 18}
+    - name: tiles__r1708350101_21
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 162
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 18}
+        - {x: -18, y: -18}
+        - {x: 18, y: -18}
+        - {x: 18, y: 18}
+    - name: tiles__r1708350101_22
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 162
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 18}
+        - {x: -18, y: -18}
+        - {x: 18, y: -18}
+        - {x: 18, y: 18}
+    - name: tiles__r1708350101_23
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 162
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 18}
+        - {x: -18, y: -18}
+        - {x: 18, y: -18}
+        - {x: 18, y: 18}
+    - name: tiles__r1708350101_24
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 122
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 18}
+        - {x: -18, y: -18}
+        - {x: 18, y: -18}
+        - {x: 18, y: 18}
+    - name: tiles__r1708350101_25
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 122
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 18}
+        - {x: -18, y: -18}
+        - {x: 16, y: -18}
+        - {x: 18, y: -14}
+        - {x: 18, y: 18}
+    - name: tiles__r1708350101_26
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 122
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 18}
+        - {x: -18, y: -18}
+        - {x: 18, y: -18}
+        - {x: 18, y: 16}
+        - {x: 17, y: 18}
+    - name: tiles__r1708350101_27
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 122
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 18}
+        - {x: -18, y: -16}
+        - {x: -16, y: -18}
+        - {x: 16, y: -18}
+        - {x: 18, y: -16}
+        - {x: 18, y: 18}
+    - name: tiles__r1708350101_28
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 122
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 18}
+        - {x: -18, y: -16}
+        - {x: -16, y: -18}
+        - {x: 16, y: -18}
+        - {x: 18, y: -16}
+        - {x: 18, y: 18}
+    - name: tiles__r1708350101_29
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 122
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 18}
+        - {x: -18, y: -16}
+        - {x: -16, y: -18}
+        - {x: 16, y: -18}
+        - {x: 18, y: -16}
+        - {x: 18, y: 18}
+    - name: tiles__r1708350101_30
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 122
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 18}
+        - {x: -18, y: -18}
+        - {x: 18, y: -18}
+        - {x: 18, y: 18}
+    - name: tiles__r1708350101_31
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 122
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 18}
+        - {x: -18, y: -18}
+        - {x: 18, y: -18}
+        - {x: 18, y: 18}
+    - name: tiles__r1708350101_32
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 122
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 18}
+        - {x: -18, y: -18}
+        - {x: 18, y: -18}
+        - {x: 18, y: 18}
+    - name: tiles__r1708350101_33
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 82
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 18}
+        - {x: -18, y: 16}
+        - {x: -18, y: -17}
+        - {x: -17, y: -18}
+        - {x: 16, y: -18}
+        - {x: 18, y: -15}
+        - {x: 18, y: 13}
+        - {x: 14, y: 18}
+    - name: tiles__r1708350101_34
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 82
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 18}
+        - {x: -18, y: -18}
+        - {x: 16, y: -18}
+        - {x: 18, y: -14}
+        - {x: 18, y: 18}
+    - name: tiles__r1708350101_35
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 82
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 18}
+        - {x: -18, y: -18}
+        - {x: 18, y: -18}
+        - {x: 18, y: 18}
+    - name: tiles__r1708350101_36
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 82
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 18}
+        - {x: -18, y: -16}
+        - {x: -16, y: -18}
+        - {x: 16, y: -18}
+        - {x: 18, y: -16}
+        - {x: 18, y: 18}
+    - name: tiles__r1708350101_37
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 82
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 18}
+        - {x: -18, y: -17}
+        - {x: -17, y: -18}
+        - {x: 18, y: -18}
+        - {x: 18, y: 18}
+    - name: tiles__r1708350101_38
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 82
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 18}
+        - {x: -18, y: -18}
+        - {x: 18, y: -18}
+        - {x: 18, y: 18}
+    - name: tiles__r1708350101_39
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 82
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 18}
+        - {x: -18, y: -18}
+        - {x: 18, y: -18}
+        - {x: 18, y: 18}
+    - name: tiles__r1708350101_40
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 82
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 18}
+        - {x: -18, y: -18}
+        - {x: 18, y: -18}
+        - {x: 18, y: 18}
+    - name: tiles__r1708350101_41
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 82
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 18}
+        - {x: -18, y: -18}
+        - {x: 18, y: -18}
+        - {x: 18, y: 18}
+    - name: tiles__r1708350101_42
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 42
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 18}
+        - {x: -18, y: 17}
+        - {x: -18, y: -16}
+        - {x: -16, y: -18}
+        - {x: 18, y: -18}
+        - {x: 18, y: 18}
+    - name: tiles__r1708350101_43
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 42
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 18}
+        - {x: -18, y: -18}
+        - {x: 18, y: -18}
+        - {x: 18, y: 16}
+        - {x: 16, y: 18}
+    - name: tiles__r1708350101_44
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 42
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 18}
+        - {x: -18, y: -18}
+        - {x: 15, y: -18}
+        - {x: 18, y: -15}
+        - {x: 18, y: 16}
+        - {x: 15, y: 18}
+    - name: tiles__r1708350101_45
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 42
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 18}
+        - {x: -18, y: -18}
+        - {x: 18, y: -18}
+        - {x: 18, y: 18}
+    - name: tiles__r1708350101_46
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 42
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: -14}
+        - {x: -14, y: -18}
+        - {x: 18, y: -18}
+        - {x: 18, y: 18}
+        - {x: -11, y: 18}
+        - {x: -18, y: 16}
+    - name: tiles__r1708350101_47
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 42
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: 18}
+        - {x: -18, y: 16}
+        - {x: -18, y: -18}
+        - {x: 18, y: -18}
+        - {x: 18, y: 18}
+    - name: tiles__r1708350101_48
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 42
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 18}
+        - {x: -18, y: -18}
+        - {x: 18, y: -18}
+        - {x: 18, y: 18}
+    - name: tiles__r1708350101_49
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 42
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 18}
+        - {x: -18, y: -18}
+        - {x: 18, y: -18}
+        - {x: 18, y: 18}
+    - name: tiles__r1708350101_50
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 42
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 18}
+        - {x: -18, y: -18}
+        - {x: 18, y: -18}
+        - {x: 18, y: 18}
+    - name: tiles__r1708350101_51
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 18}
+        - {x: -18, y: -18}
+        - {x: 18, y: -18}
+        - {x: 18, y: 18}
+    - name: tiles__r1708350101_52
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 2
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 18}
+        - {x: -18, y: -18}
+        - {x: 16, y: -18}
+        - {x: 18, y: -14}
+        - {x: 18, y: 18}
+    - name: tiles__r1708350101_53
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 2
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 18}
+        - {x: -18, y: -18}
+        - {x: 18, y: -18}
+        - {x: 18, y: 18}
+    - name: tiles__r1708350101_54
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 2
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 18}
+        - {x: -18, y: -16}
+        - {x: -16, y: -18}
+        - {x: 16, y: -18}
+        - {x: 18, y: -16}
+        - {x: 18, y: 18}
+    - name: tiles__r1708350101_55
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 2
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 18}
+        - {x: -18, y: -17}
+        - {x: -17, y: -18}
+        - {x: 18, y: -18}
+        - {x: 18, y: 18}
+    - name: tiles__r1708350101_56
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 2
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 18}
+        - {x: -18, y: -18}
+        - {x: 18, y: -18}
+        - {x: 18, y: 18}
+    - name: tiles__r1708350101_57
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 2
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 18}
+        - {x: -18, y: -18}
+        - {x: 18, y: -18}
+        - {x: 18, y: 18}
+    - name: tiles__r1708350101_58
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 2
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 18}
+        - {x: -18, y: -18}
+        - {x: 18, y: -18}
+        - {x: 18, y: 18}
+    - name: tiles__r1708350101_59
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 2
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 18}
+        - {x: -18, y: -18}
+        - {x: 18, y: -18}
+        - {x: 18, y: 18}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
