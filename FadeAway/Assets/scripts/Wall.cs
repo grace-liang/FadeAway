@@ -38,6 +38,6 @@ public class Wall : MonoBehaviour
 
 	public void AddDuration ()
 	{
-		timer -= 0.3f;
+		timer -= 0.6f;
 	}
 }
