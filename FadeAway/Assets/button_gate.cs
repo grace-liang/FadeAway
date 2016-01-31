@@ -21,6 +21,7 @@ public class button_gate : MonoBehaviour {
 		if (timeLeft <= 0) {
 			Debug.Log ("Time has hit 0");
 			gate = GameObject.Find ("Gate_North");
+			Destroy (gate.GetComponent<Wall> ());
 			Destroy (gate.GetComponent<Collider2D> ());
 			Destroy (gate.GetComponent<SpriteRenderer> ());
 			Destroy (this.gameObject);
