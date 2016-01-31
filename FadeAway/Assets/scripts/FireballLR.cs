@@ -4,23 +4,23 @@ using System.Collections;
 public class FireballLR : MonoBehaviour
 {
 	
-	private int speed = 5;
+	private int speed = 3;
 	private bool moveLeft;
 
 	void Start ()
 	{
-		moveLeft = false;
+		moveLeft = true;
 	}
 
 	void Update ()
 	{
 		if (moveLeft) {
-			Debug.Log ("Moving left now.");
-			gameObject.GetComponent<Animator> ().runtimeAnimatorController = Resources.Load ("fbStartLeft") as RuntimeAnimatorController;
+			//Debug.Log ("Moving left now.");
+			gameObject.GetComponent<Animator> ().runtimeAnimatorController = Resources.Load ("fbL") as RuntimeAnimatorController;
 			transform.Translate (Vector3.left * speed * Time.deltaTime);
 		} else {
-			Debug.Log ("Moving right now.");
-			gameObject.GetComponent<Animator> ().runtimeAnimatorController = Resources.Load ("fbStartRight") as RuntimeAnimatorController;
+			//Debug.Log ("Moving right now.");
+			gameObject.GetComponent<Animator> ().runtimeAnimatorController = Resources.Load ("fbR") as RuntimeAnimatorController;
 			transform.Translate (Vector3.right * speed * Time.deltaTime);
 		}
 	}
@@ -28,12 +28,11 @@ public class FireballLR : MonoBehaviour
 	public void reverseDirection ()
 	{
 		moveLeft = !moveLeft;
-		Debug.Log (moveLeft);
+		// Debug.Log (moveLeft);
 	}
 
 	void OnTriggerEnter2D (Collider2D other)
 	{
-		Debug.Log ("Trigger");
 		if (other.tag == "Wall") {
 			reverseDirection ();
 		}
