@@ -10,10 +10,6 @@ public class Wall : MonoBehaviour
 	protected float fadeDuration = 2;
 	private float timer = 0;
 
-	void Start ()
-	{
-		player = FindObjectOfType (typeof(Player)) as Player;
-	}
 
 	protected void Update ()
 	{
@@ -33,7 +29,7 @@ public class Wall : MonoBehaviour
             this.GetComponent<SpriteRenderer>().material.color = changeColor;
 
             Global.MinusPower (powerUsageRate);
-			Debug.Log ("Player's power level: " + player.GetPower ());
+			Debug.Log ("Player's power level: " + Global.GetPower ());
 		}
 	}
 
