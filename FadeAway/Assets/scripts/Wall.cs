@@ -4,7 +4,6 @@ using UnityEngine.SceneManagement;
 
 public class Wall : MonoBehaviour
 {
-	private Player player;
 	private double powerUsageRate = 3;
     
 	protected float fadeDuration = 2;
@@ -14,7 +13,6 @@ public class Wall : MonoBehaviour
 
 	void Start ()
 	{
-		player = FindObjectOfType (typeof(Player)) as Player;
         disableCollider = false;
     }
 
@@ -36,7 +34,7 @@ public class Wall : MonoBehaviour
             this.GetComponent<SpriteRenderer>().material.color = changeColor;
 
             Global.MinusPower (powerUsageRate);
-			Debug.Log ("Player's power level: " + player.GetPower ());
+			Debug.Log ("Player's power level: " + Global.GetPower ());
 		}
 	}
 
