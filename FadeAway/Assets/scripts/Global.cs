@@ -20,6 +20,7 @@ public class Global
 
     // Game State
     public static bool inTransition = false;
+    public static bool levelImageSeen = false;
 
 	public static double GetPower ()
 	{
@@ -28,13 +29,15 @@ public class Global
 
     public static void SetPower(double newPower)
     {
-        power = newPower;
+        if (newPower > 100) power = 100;
+        else if (newPower < 0) power = 0;
+        else power = newPower;
     }
 
 	public static void AddPower (double number)
 	{
 		double newPower;
-		newPower = power += number;
+		newPower = power + number;
 		if (newPower > 100) {
 			power = 100;
 		} else {
@@ -45,7 +48,7 @@ public class Global
 	public static void MinusPower (double number)
 	{
 		double newPower;
-		newPower = power -= number;
+		newPower = power - number;
 		if (newPower < 0) {
 			power = 0;
 		} else {
