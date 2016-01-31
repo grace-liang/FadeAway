@@ -2,51 +2,48 @@
 using System.Collections;
 using UnityEngine.SceneManagement;
 
-public class Wall : MonoBehaviour {
+public class Wall : MonoBehaviour
+{
+	private Player player;
+	private double powerUsageRate = 3;
 
-	// private bool wallsHidden;
-	// private float time_since_start;
-	private player_movement player;
-	private double power_usage = 3;
-
-	// For colour fade.
 	private float fadeDuration = 5;
 	private float timer = 0;
 
-    // Use this for initialization
-    void Start () {
-		player = FindObjectOfType (typeof(player_movement)) as player_movement;
-		// time_since_start = 0;
-		// wallsHidden = false;
+	void Start ()
+	{
+		player = FindObjectOfType (typeof(Player)) as Player;
 	}
-	
-	// Update is called once per frame
-	void Update () {
 
-		// Fade the walls from red to white over fadeDuration.
+	void Update ()
+	{
+
+		// Fade the walls from red to white gradually over fadeDuration.
 		this.GetComponent<SpriteRenderer> ().color = Color.Lerp (Color.red, Color.white, timer);
 		if (timer < 1) {
 			timer += Time.deltaTime / fadeDuration;
 		}
 
-		if (Input.GetKey(KeyCode.Space) && player.get_power() > 0)
-		{
-			this.GetComponent<SpriteRenderer>().color = Color.red;
-			player.minus_power (power_usage);
-			Debug.Log ("Power level: "+player.get_power ());
+		// Light up the walls and reduce the player's power.
+		if (Input.GetKey (KeyCode.Space) && player.GetPower () > 0) {
+			this.GetComponent<SpriteRenderer> ().color = Color.red;
+			player.MinusPower (powerUsageRate);
+			Debug.Log ("Player's power level: " + player.GetPower ());
 		}
-    }
-
-	void OnTriggerEnter2D (Collider2D other) {
-		death ();
 	}
 
-	void death() {
-		//TODO - change to Get scene 0.
-		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+	void OnTriggerEnter2D (Collider2D other)
+	{
+		DeathByWall ();
 	}
-		
-	public void AddDuration () {
+
+	void DeathByWall ()
+	{
+		SceneManager.LoadScene (SceneManager.GetActiveScene ().buildIndex);
+	}
+
+	public void AddDuration ()
+	{
 		if (fadeDuration < 3) {
 			fadeDuration = 3;
 			timer = 0;

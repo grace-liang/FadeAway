@@ -9,9 +9,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 405400}
   - 212: {fileID: 21282988}
-  - 114: {fileID: 11442668}
   - 61: {fileID: 6142574}
   - 50: {fileID: 5087106}
+  - 114: {fileID: 11442668}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -70,10 +70,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 150420}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b8fed1446b6564d1ebb57e4b2faaf604, type: 3}
+  m_Script: {fileID: 11500000, guid: c1ef6af61cb67b3488ad02fe3eaff225, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  powerlevel: 100
 --- !u!212 &21282988
 SpriteRenderer:
   m_ObjectHideFlags: 1
