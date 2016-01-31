@@ -1518,6 +1518,29 @@ Prefab:
       propertyPath: m_AnchoredPosition.x
       value: 453.26996
       objectReference: {fileID: 0}
+    - target: {fileID: 11477884, guid: 63ca15b53230a05449360cb466ca72eb, type: 2}
+      propertyPath: m_Text
+      value: '00:20:00
+
+        Power:'
+      objectReference: {fileID: 0}
+    - target: {fileID: 11477884, guid: 63ca15b53230a05449360cb466ca72eb, type: 2}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 876bfc4f2eb900543a24efd7a04971d2,
+        type: 3}
+    - target: {fileID: 22493262, guid: 63ca15b53230a05449360cb466ca72eb, type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 248
+      objectReference: {fileID: 0}
+    - target: {fileID: 22493262, guid: 63ca15b53230a05449360cb466ca72eb, type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 72
+      objectReference: {fileID: 0}
+    - target: {fileID: 11477884, guid: 63ca15b53230a05449360cb466ca72eb, type: 2}
+      propertyPath: m_FontData.m_Alignment
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 63ca15b53230a05449360cb466ca72eb, type: 2}
   m_IsPrefabParent: 0
@@ -2033,11 +2056,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 495554, guid: 4533946bfda5e814d88bf0c1ea3e556b, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 8.41
+      value: 8.37
       objectReference: {fileID: 0}
     - target: {fileID: 495554, guid: 4533946bfda5e814d88bf0c1ea3e556b, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -0.56
+      value: -0.58
       objectReference: {fileID: 0}
     - target: {fileID: 495554, guid: 4533946bfda5e814d88bf0c1ea3e556b, type: 2}
       propertyPath: m_LocalPosition.z
@@ -2061,15 +2084,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 495554, guid: 4533946bfda5e814d88bf0c1ea3e556b, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 495554, guid: 4533946bfda5e814d88bf0c1ea3e556b, type: 2}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 0.9789291
       objectReference: {fileID: 0}
     - target: {fileID: 495554, guid: 4533946bfda5e814d88bf0c1ea3e556b, type: 2}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 0.97190595
       objectReference: {fileID: 0}
     - target: {fileID: 21297528, guid: 4533946bfda5e814d88bf0c1ea3e556b, type: 2}
       propertyPath: m_Color.r

@@ -33,8 +33,7 @@ public class Wall : MonoBehaviour
             changeColor.a = 1.0f;
             this.GetComponent<SpriteRenderer>().material.color = changeColor;
 
-            Global.MinusPower (powerUsageRate);
-			Debug.Log ("Player's power level: " + Global.GetPower ());
+            Global.MinusPower(Time.deltaTime);
 		}
 	}
 
@@ -45,6 +44,7 @@ public class Wall : MonoBehaviour
 
 	void DeathByWall ()
 	{
+        Global.SetPower(Global.levelPowerCache);
 		SceneManager.LoadScene (SceneManager.GetActiveScene ().buildIndex);
 	}
 
