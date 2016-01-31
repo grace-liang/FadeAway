@@ -18,6 +18,7 @@ public class StartButton : MonoBehaviour {
     public IEnumerator moveScene()
     {
         Global.level = 1;
+        Global.levelImageSeen = false;
         float fadeTime = GameObject.Find("_GM").GetComponent<Fading>().BeginFade(1);
         yield return new WaitForSeconds(fadeTime);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);

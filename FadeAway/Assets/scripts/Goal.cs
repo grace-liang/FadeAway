@@ -32,9 +32,9 @@ public class Goal : MonoBehaviour
 		// Advance to the next level.
 		Global.level++;
         Global.inTransition = true;
+        Global.levelImageSeen = false;
         float fadeTime = GameObject.Find("_GM").GetComponent<Fading>().BeginFade(1);
         yield return new WaitForSeconds(fadeTime);
-        Global.levelImageSeen = false;
         SceneManager.LoadScene (SceneManager.GetActiveScene ().buildIndex + 1);
 	}
 
