@@ -22,7 +22,9 @@ public class L5MovingPlatform : MonoBehaviour {
 		}
 
 		// Fade the platforms from red to white gradually over fadeDuration.
-		GetComponent<SpriteRenderer> ().color = Color.Lerp (Color.red, Color.white, timer);
+		Color change = this.GetComponent<SpriteRenderer>().material.color;
+		change.a = 1 - timer;
+		this.GetComponent<SpriteRenderer>().material.color = change;
 		if (timer < 1) {
 			timer += Time.deltaTime / fadeDuration;
 		}
@@ -39,9 +41,6 @@ public class L5MovingPlatform : MonoBehaviour {
 
 	public void reverseDirection() {
 		moveLeft = !moveLeft;
-	}
-
-	void OnTriggerEnter2D(Collider2D other) {
 	}
 
 }
