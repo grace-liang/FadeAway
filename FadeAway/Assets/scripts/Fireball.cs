@@ -16,11 +16,11 @@ public class Fireball : MonoBehaviour
 	{
 		if (moveLeft) {
 			Debug.Log ("Moving left now.");
-			gameObject.GetComponent<Animator> ().runtimeAnimatorController = Resources.Load ("Fireball-Left") as RuntimeAnimatorController;
+			gameObject.GetComponent<Animator> ().runtimeAnimatorController = Resources.Load ("fbStartLeft") as RuntimeAnimatorController;
 			transform.Translate (Vector3.left * speed * Time.deltaTime);
 		} else {
 			Debug.Log ("Moving right now.");
-			gameObject.GetComponent<Animator> ().runtimeAnimatorController = Resources.Load ("New Sprite") as RuntimeAnimatorController;
+			gameObject.GetComponent<Animator> ().runtimeAnimatorController = Resources.Load ("fbStartRight") as RuntimeAnimatorController;
 			transform.Translate (Vector3.right * speed * Time.deltaTime);
 		}
 	}
