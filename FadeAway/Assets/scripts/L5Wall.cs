@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Level4Wall : MonoBehaviour {
+public class L5Wall : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {

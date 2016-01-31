@@ -2,7 +2,7 @@
 using System.Collections;
 using UnityEngine.SceneManagement;
 
-public class Level4Player : MonoBehaviour {
+public class L5Player : MonoBehaviour {
 
 	private readonly int speed = 5;
 	bool platformEntered;

@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
-public class CircleMovingPlatform : MonoBehaviour {
+public class L5MovingPlatform : MonoBehaviour {
 
 	public bool moveLeft;
 
