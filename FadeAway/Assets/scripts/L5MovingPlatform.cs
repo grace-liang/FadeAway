@@ -28,7 +28,6 @@ public class L5MovingPlatform : MonoBehaviour {
 		}
 
 		// Light up the walls and reduce the player's power.
-		L5Player player = FindObjectOfType (typeof(L5Player)) as L5Player;
 		double powerUsageRate = 3;
 
 		if (Input.GetKey (KeyCode.Space) && Global.GetPower () > 0) {
