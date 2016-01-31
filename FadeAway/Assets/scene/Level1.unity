@@ -308,9 +308,9 @@ GameObject:
   m_Component:
   - 224: {fileID: 760238168}
   - 212: {fileID: 760238167}
-  - 61: {fileID: 760238166}
   - 50: {fileID: 760238165}
   - 114: {fileID: 760238164}
+  - 58: {fileID: 760238166}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -330,6 +330,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1ef6af61cb67b3488ad02fe3eaff225, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  God_Mode: 1
 --- !u!50 &760238165
 Rigidbody2D:
   serializedVersion: 2
@@ -348,21 +349,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &760238166
-BoxCollider2D:
+--- !u!58 &760238166
+CircleCollider2D:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 6142574, guid: 0a85234d0ccbc5a4e8da5616c5609a7b,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 760238163}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 3.33, y: 3.28}
+  m_Radius: 2
 --- !u!212 &760238167
 SpriteRenderer:
   m_ObjectHideFlags: 0

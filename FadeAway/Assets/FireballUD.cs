@@ -6,6 +6,7 @@ public class FireballUD : MonoBehaviour
 
 	private int speed = 3;
 	private bool moveDown;
+	public AudioClip clip;
 
 	void Start ()
 	{

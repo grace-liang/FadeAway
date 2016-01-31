@@ -4,10 +4,9 @@ using UnityEngine.SceneManagement;
 
 public class Wall : MonoBehaviour
 {
-	private double powerUsageRate = 3;
-
 	protected float fadeDuration = 2;
 	private float timer = 0;
+
 
     public static bool disableCollider;
 

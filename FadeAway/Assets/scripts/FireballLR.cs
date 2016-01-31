@@ -6,6 +6,7 @@ public class FireballLR : MonoBehaviour
 	
 	private int speed = 3;
 	private bool moveLeft;
+	public AudioClip clip;
 
 	void Start ()
 	{

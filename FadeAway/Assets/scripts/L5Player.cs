@@ -16,14 +16,11 @@ public class L5Player : Player {
 	// Update is called once per frame
 	void Update () {
 		if (!platformEntered && deathzoneEntered) {
-			// TODO: death here
-			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+			base.Die ();
 		}
 
 		base.Update ();
 	}
-
-
 
 	void circleMovement(bool moveleft) {
 		if (moveleft) {
@@ -55,13 +52,12 @@ public class L5Player : Player {
 		} else if (tagName == "Finish") {
 			deathzoneEntered = false;
 			platformEntered = true; 
-			// TODO: go to next level
 		}
 	}
 
 
 	void OnTriggerExit2D(Collider2D other) {
-		if (other.tag == "Platform" || other.tag == "Start") {
+		if (other.tag == "Platform") {
 			platformEntered = false;
 		}
 	}
