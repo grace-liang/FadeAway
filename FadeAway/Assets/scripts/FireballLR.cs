@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Fireball : MonoBehaviour
+public class FireballLR : MonoBehaviour
 {
 	
 	private int speed = 5;
