@@ -7,6 +7,7 @@ public class Goal : MonoBehaviour
 
 	// Goal knows the player so we can add to their power level.
 	private Player player;
+	public AudioClip clip;
 
 	void Start ()
 	{
@@ -15,6 +16,10 @@ public class Goal : MonoBehaviour
 
 	IEnumerator OnTriggerEnter2D (Collider2D other)
 	{
+		// Play sound effect
+		AudioSource source = GetComponent<AudioSource>();
+		source.PlayOneShot(clip, 0.7F);
+
         player.GetComponent<Rigidbody2D>().velocity = Vector3.zero;
 
 		// Grant the player more power for beating the level.
@@ -29,4 +34,6 @@ public class Goal : MonoBehaviour
         yield return new WaitForSeconds(fadeTime);
 		SceneManager.LoadScene (SceneManager.GetActiveScene ().buildIndex + 1);
 	}
+
+
 }
