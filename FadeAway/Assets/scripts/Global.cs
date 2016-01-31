@@ -10,5 +10,6 @@ public class Global
 	public static int level = SceneManager.GetActiveScene ().buildIndex + 1;
 
 	// Available alloted for each level.
-	public static float[] times = new float[5] { 15.0f, 20.0f, 20.0f, 25.0f, 30.0f };
+	// First one is for the start menu.
+	public static float[] times = new float[6] { 0.0f, 5.0f, 10.0f, 15.0f, 20.0f, 20.0f };
 }
