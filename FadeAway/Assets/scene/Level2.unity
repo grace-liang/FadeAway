@@ -1543,6 +1543,18 @@ Prefab:
       propertyPath: m_FontData.m_Alignment
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 11477884, guid: 63ca15b53230a05449360cb466ca72eb, type: 2}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11477884, guid: 63ca15b53230a05449360cb466ca72eb, type: 2}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11477884, guid: 63ca15b53230a05449360cb466ca72eb, type: 2}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 63ca15b53230a05449360cb466ca72eb, type: 2}
   m_IsPrefabParent: 0
@@ -2122,6 +2134,10 @@ Prefab:
     - target: {fileID: 6142574, guid: 0a85234d0ccbc5a4e8da5616c5609a7b, type: 2}
       propertyPath: m_Size.x
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 11442668, guid: 0a85234d0ccbc5a4e8da5616c5609a7b, type: 2}
+      propertyPath: God_Mode
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6142574, guid: 0a85234d0ccbc5a4e8da5616c5609a7b, type: 2}
