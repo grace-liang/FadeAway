@@ -29,7 +29,7 @@ public class Goal : MonoBehaviour
 
 		// Advance to the next level.
 		Global.level++;
-        Wall.disableCollider = true;
+        Global.inTransition = true;
         float fadeTime = GameObject.Find("_GM").GetComponent<Fading>().BeginFade(1);
         yield return new WaitForSeconds(fadeTime);
 		SceneManager.LoadScene (SceneManager.GetActiveScene ().buildIndex + 1);

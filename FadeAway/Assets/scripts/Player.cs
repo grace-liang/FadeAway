@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
-	protected int speed = 5;
+    protected int speed = 5;
 
 	protected void Update ()
 	{
@@ -31,7 +31,7 @@ public class Player : MonoBehaviour
     {
         if (other.tag == "Wall" || other.tag == "Fireball")
         {
-            Die();
+            if(!Global.inTransition) Die();
         }
     }
 
