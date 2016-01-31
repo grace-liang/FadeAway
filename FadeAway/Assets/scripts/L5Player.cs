@@ -2,12 +2,10 @@
 using System.Collections;
 using UnityEngine.SceneManagement;
 
-public class L5Player : MonoBehaviour {
+public class L5Player : Player {
 
-	private readonly int speed = 5;
 	bool platformEntered;
 	bool deathzoneEntered;
-
 
 	// Use this for initialization
 	void Start () {
@@ -17,26 +15,12 @@ public class L5Player : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(Input.GetKey(KeyCode.UpArrow)){
-			transform.Translate(Vector3.up * speed *Time.deltaTime);
-		}
-
-		if(Input.GetKey(KeyCode.DownArrow)){
-			transform.Translate(Vector3.down * speed *Time.deltaTime);
-		}
-
-		if(Input.GetKey(KeyCode.LeftArrow)){
-			transform.Translate(Vector3.left * speed *Time.deltaTime);
-		}
-
-		if(Input.GetKey(KeyCode.RightArrow)){
-			transform.Translate(Vector3.right * speed *Time.deltaTime);
-		}
-
 		if (!platformEntered && deathzoneEntered) {
 			// TODO: death here
 			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 		}
+
+		base.Update ();
 	}
 
 

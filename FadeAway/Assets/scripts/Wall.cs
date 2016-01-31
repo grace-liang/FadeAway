@@ -6,8 +6,8 @@ public class Wall : MonoBehaviour
 {
 	private Player player;
 	private double powerUsageRate = 3;
-
-	private float fadeDuration = 2;
+    
+	protected float fadeDuration = 2;
 	private float timer = 0;
 
 	void Start ()
@@ -15,7 +15,7 @@ public class Wall : MonoBehaviour
 		player = FindObjectOfType (typeof(Player)) as Player;
 	}
 
-	void Update ()
+	protected void Update ()
 	{
 
         // Fade the walls from red to white gradually over fadeDuration.
@@ -46,9 +46,6 @@ public class Wall : MonoBehaviour
 
 	public void AddDuration ()
 	{
-		if (fadeDuration < 3) {
-			fadeDuration = 3;
-			timer = 0;
-		}
+		timer -= 0.3f;
 	}
 }
