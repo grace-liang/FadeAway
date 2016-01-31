@@ -356,6 +356,10 @@ Prefab:
       propertyPath: m_Size.y
       value: 3.6
       objectReference: {fileID: 0}
+    - target: {fileID: 8225364, guid: 4533946bfda5e814d88bf0c1ea3e556b, type: 2}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4533946bfda5e814d88bf0c1ea3e556b, type: 2}
   m_IsPrefabParent: 0
@@ -875,7 +879,7 @@ GameObject:
   - 58: {fileID: 760238166}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -892,6 +896,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1ef6af61cb67b3488ad02fe3eaff225, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  God_Mode: 1
 --- !u!50 &760238165
 Rigidbody2D:
   serializedVersion: 2
