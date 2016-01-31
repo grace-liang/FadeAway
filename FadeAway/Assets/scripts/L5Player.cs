@@ -56,7 +56,7 @@ public class L5Player : MonoBehaviour {
 	void OnTriggerStay2D(Collider2D other) {
 		// Move our position a step closer to the target.
 		string tagName = other.tag;
-		if (tagName == "Platform" || tagName == "Start") {
+		if (tagName == "Platform") {
 			platformEntered = true;
 
 			float x_value = other.GetComponent<Transform> ().position.x;
@@ -64,7 +64,7 @@ public class L5Player : MonoBehaviour {
 			float z_value = this.GetComponent<Transform> ().position.z;
 			Vector3 new_positions = new Vector3 (x_value, y_value, z_value);
 
-			transform.position = Vector3.MoveTowards (transform.position, new_positions, speed * Time.deltaTime);
+			transform.position = Vector3.MoveTowards (transform.position, new_positions, (speed + 1) * Time.deltaTime);
 		} else if (tagName == "Deathzone") {
 			deathzoneEntered = true;
 
