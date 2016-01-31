@@ -13,7 +13,7 @@ public class Timer : MonoBehaviour
 	void Start ()
 	{
 		goalTime = Time.time;
-		remainingTime = Global.times [Global.level - 1];
+		remainingTime = Global.times [Global.level];
 		current_power = Global.GetPower ();
 	}
 
@@ -32,7 +32,7 @@ public class Timer : MonoBehaviour
 
 	void DeathByTimer ()
 	{
-		remainingTime = Global.times [Global.level - 1];
+		remainingTime = Global.times [Global.level];
 		SetTimerText (remainingTime * 60);
 		SceneManager.LoadScene (SceneManager.GetActiveScene ().buildIndex);
 	}

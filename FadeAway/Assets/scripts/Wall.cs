@@ -4,12 +4,17 @@ using UnityEngine.SceneManagement;
 
 public class Wall : MonoBehaviour
 {
-	private Player player;
 	private double powerUsageRate = 3;
     
 	protected float fadeDuration = 2;
 	private float timer = 0;
 
+    public static bool disableCollider;
+
+	void Start ()
+	{
+        disableCollider = false;
+    }
 
 	protected void Update ()
 	{
@@ -35,7 +40,7 @@ public class Wall : MonoBehaviour
 
 	void OnTriggerEnter2D (Collider2D other)
 	{
-		DeathByWall ();
+		if(!disableCollider) DeathByWall ();
 	}
 
 	void DeathByWall ()
